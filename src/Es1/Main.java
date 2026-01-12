@@ -19,24 +19,23 @@ public class Main {
 
 
         while (true) {
-            System.out.print("Scegli una posizione da 1 a 5, 0 per terminare: ");
-            int pos = sc.nextInt();
+            System.out.print("Scegli un numero, 0 per terminare: ");
+            int number = sc.nextInt();
 
-            if (pos != 0) {
-                System.out.print("Scegli il numero da inserire: ");
-                int number = sc.nextInt();
+            if (number != 0) {
+                System.out.print("Scegli una posizione: ");
+                int pos = sc.nextInt();
 
                 try {
                     array[pos - 1] = number;
                     System.out.println("Array modificato: " + Arrays.toString(array));
 
-                } catch (OutOfRangeException e) {
-                    System.out.println("Dev'essere una posizione da 1 a 5!");
+                } catch (IndexOutOfBoundsException e) {
+                    System.out.println("Dev'essere una posizione da 1 a 5! Riprova...");
                 }
 
             } else {
                 System.out.println("Processo terminato");
-                sc.close();
                 break;
 
             }
