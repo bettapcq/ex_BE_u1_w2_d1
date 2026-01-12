@@ -9,24 +9,24 @@ public class Main {
 
 
         Scanner sc = new Scanner(System.in);
-//        System.out.println("Inserisci i km percorsi:");
-//        int kmInt = sc.nextInt();
-//        System.out.println("Inserisci i litri consumati:");
-//        int litriInt = sc.nextInt();
-//
-//        try {
-//            int kmAlLitro = kmInt / litriInt;
-//            System.out.println("Hai consumato " + kmAlLitro + " litri al km");
-//        } catch (ExceptionInInitializerError e) {
-//            System.out.println("Non puoi aver consumato 0 litri! ");
-//        }
+        System.out.println("Inserisci i km percorsi:");
+        int kmInt = sc.nextInt();
+        System.out.println("Inserisci i litri consumati:");
+        int litriInt = sc.nextInt();
+
+        try {
+            int kmAlLitro = kmInt / litriInt;
+            System.out.println("Hai consumato " + kmAlLitro + " litri al km");
+        } catch (ExceptionInInitializerError e) {
+            System.out.println("Non puoi aver consumato 0 litri! ");
+        }
 
         //con double:
-
+        System.out.println("Ora proviamo con i double...");
         System.out.println("Inserisci i km percorsi:");
-        double kmDouble = sc.nextInt();
+        double kmDouble = sc.nextDouble();
         System.out.println("Inserisci i litri consumati:");
-        double litriDouble = sc.nextInt();
+        double litriDouble = sc.nextDouble();
 
         try {
             double kmAlLitroD = kmDouble / litriDouble;
@@ -36,7 +36,7 @@ public class Main {
         }
         sc.close();
     }
-
+    // ritorna Infinity !
 
 }
 
