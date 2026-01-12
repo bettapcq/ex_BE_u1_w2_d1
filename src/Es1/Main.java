@@ -32,6 +32,8 @@ public class Main {
 
                 } catch (IndexOutOfBoundsException e) {
                     System.out.println("Dev'essere una posizione da 1 a 5! Riprova...");
+                } catch (NumberFormatException e) {
+                    System.out.println("Dev'essere un numero!");
                 }
 
             } else {

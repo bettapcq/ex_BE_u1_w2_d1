@@ -4,7 +4,7 @@ public class ContoCorrente {
 
 
     private final int maxMovimenti = 50;
-    private String titolare;
+    private final String titolare;
     private int nMovimenti;
     private double saldo;
 

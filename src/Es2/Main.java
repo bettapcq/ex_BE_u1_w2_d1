@@ -17,7 +17,7 @@ public class Main {
         try {
             int kmAlLitro = kmInt / litriInt;
             System.out.println("Hai consumato " + kmAlLitro + " litri al km");
-        } catch (ExceptionInInitializerError e) {
+        } catch (ArithmeticException e) {
             System.out.println("Non puoi aver consumato 0 litri! ");
         }
 
@@ -31,12 +31,12 @@ public class Main {
         try {
             double kmAlLitroD = kmDouble / litriDouble;
             System.out.println("Hai consumato " + kmAlLitroD + " litri al km");
-        } catch (ExceptionInInitializerError e) {
+        } catch (ArithmeticException e) { // inserita eccezione corretta
             System.out.println("Non puoi aver consumato 0 litri! ");
         }
         sc.close();
     }
-    // ritorna Infinity !
+    // ritorna Infinity ! in questo caso bisogna gestire con if else
 
 }
 
